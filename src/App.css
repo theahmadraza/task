@@ -1,38 +1,256 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* -------------- DESKTOP -------------------- */
+.desktop_view{
+  display: block;
+
+}
+
+.mobile_view{
+  display: none;
+}
+
+.desktop_view h1{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* -------------- MOBILE -------------------- */
+
+
+.mobile_view-navbar{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-left-icon{
+  color: #254A74;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-left-icon:nth-child(2){
+  margin-left: 12px;
+
+}
+
+.navbar-right-icon{
+  margin-left: 12px;
+  color: #254A74;
+}
+
+.navbar-right-icon:nth-child(2){
+  padding: 2px;
+  color: #7DA244;
+  border: 1px solid #254A74;
+  border-radius: 100%;
+}
+
+/* -------------- MOBILE HERO-SECTION  -------------------- */
+
+
+
+
+.mobile_view-heroSection{
+  
+  background-image: url("./assets/image/background_image.jpg");
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-position:center;
+
+
+}
+
+/* -------------- MOBILE HERO-SECTION BUTTONS-------------------- */
+
+
+.heroSection_button{
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* -------------- MOBILE HERO-SECTION TITLE BOX-------------------- */
+
+
+.heroSection_titleBox{
+  margin-top: 20px;
+  width:50%;
+  padding:30px 15px ;
+  background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 0px 7px 7px 0px;
+  box-shadow: 7px 7px 5px #aaaaaa;
+
+}
+
+.heroSection_titleBox h1{
+  color: #254A74;
+  font-size: 18px;
+}
+
+.heroSection_titleBox p{
+  margin-top: 30px;
+  font-size: 14px;
+  color: black;
+}
+
+
+/* -------------- MOBILE HERO-SECTION SEARCH BOX-------------------- */
+
+
+.heroSection_search{
+  margin-top: 20px;
+  background-color: rgba(211, 211, 211, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:70%;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  padding-right: 13;
+}
+
+.heroSection_search-title{
+  margin-top: 5px;
+  font-size: 12px;
+  color: #254A74;
+}
+
+.heroSection_search-input{
+  font-size: 14px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 3px;
+  width: 18rem;
+}
+
+.heroSection_search-btn{
+  margin-top: 5px;
+  background-color: #7DA244;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  padding: 6px 3px;
   color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  width: 10rem;
+  width: 6rem;
 }
 
-.App-link {
-  color: #61dafb;
+.heroSection_search-btn:hover{
+  background-color: steelblue;
+  transition: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heroSection_search-btn p {
+  font-size: 12px;
 }
+
+.heroSection_search-icon{
+  color: white;
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .mobile_view {
+      display: block;
+  }
+
+  .desktop_view {
+    display: none;
+}
+}
+
+
+/* -------------- TOGGLE MENU  -------------------- */
+
+.toggle-navbar{
+  background-color: white;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  animation-name: toggle;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes toggle {
+  0% { opacity: 0.8; transform: translateY(-100%); }   
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.menu_top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_top-left{
+
+  display: flex;
+  align-items: center ;
+  
+}
+
+
+
+.menu_top-left h3{
+  margin-left: 7px;
+  color: #254A74;
+}
+
+.menu_top-right{
+  color: #254A74;
+  font-size: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu_bottom{
+  margin-top: 30px;
+}
+
+.menu_bottom ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_bottom ul li{
+  list-style-type: none;
+}
+
+ul li{
+  margin-bottom: 34px;
+}
+
+li a {
+  font-size: 18px;
+  font-weight:500;
+  text-transform: uppercase;
+  color: #254A74;
+  text-decoration: none;
+}
+

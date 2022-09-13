@@ -1,0 +1,19 @@
+.btn{
+    margin-top: 5rem;
+    background-color: rgba(37, 74, 116, 0.4);
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-family: sans-serif;
+    margin-left: 20px;
+
+}
+
+
+.btn:hover{
+    background-color: #254A74;
+    transition: 0.3s;
+}
