@@ -32,6 +32,10 @@
   color: #254A74;
 }
 
+.mobile_view-navbar-left:nth-child(1){
+  cursor: pointer;
+}
+
 .navbar-left-icon:nth-child(2){
   margin-left: 12px;
 

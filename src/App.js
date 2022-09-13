@@ -30,11 +30,10 @@ function App() {
       </div>
       <div className="mobile_view">
         <div className="mobile_view-navbar">
-          <div className="mobile_view-navbar-left">
             <div className="mobile_view-navbar-left">
               <FontAwesomeIcon onClick={openToggleHandler} icon={faBars} className="navbar-left-icon" />
               <FontAwesomeIcon icon={faPhone} className="navbar-left-icon" />
-            </div>
+           
           </div>
           <img src={logo} />
           <div className="mobile_view-navbar-right">
