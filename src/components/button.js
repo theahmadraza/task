@@ -3,7 +3,7 @@ import './button.css'
 
 function button(props) {
   return (
-    <div className='btn'>{props.txt}</div>
+    <a href="/" className='btn'>{props.txt}</a>
   )
 }
 

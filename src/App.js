@@ -35,7 +35,7 @@ function App() {
               <FontAwesomeIcon icon={faPhone} className="navbar-left-icon" />
            
           </div>
-          <img src={logo} />
+          <img src={logo} className="img_custom" />
           <div className="mobile_view-navbar-right">
             <FontAwesomeIcon icon={faSearch} className="navbar-right-icon" />
             <FontAwesomeIcon icon={faUser} className="navbar-right-icon" />
@@ -77,9 +77,9 @@ function App() {
           </div>
           <div className="heroSection_titleBox">
             <h1>
-              when It comes to your End-of-Life Planning, We've got you covered.
+              When It comes to your End-of-Life Planning, We've got you covered.
             </h1>
-            <p>
+            <p className="heroSection_para">
               Memorial Planning is all about you. As a family-first network of
               cemeteries and funeral homes, honoring your life story is our
               life's work we offer end-of-life solutions to help make the most
@@ -87,18 +87,20 @@ function App() {
             </p>
           </div>
           <div className="heroSection_search">
+            <div className="title_parent">
             <p className="heroSection_search-title">Find A Location Near You</p>
-            <p className="heroSection_search-input">
-              Seach by City, State, or Zip Code
-            </p>
+            </div>
+            <div className="heroSection_search_2">
+            <input className="heroSection_search-input" type="text" placeholder=" Seach by City, State, or Zip Code"></input>
             <div className="heroSection_search-btn">
-              <p>Search Now</p>
+              <a className="search_btn" href="/">Search Now</a>
               <FontAwesomeIcon
                 icon={faSearch}
                 className="heroSection_search-icon"
               />
             </div>
             <p className="heroSection_search-txt">View All Locations </p>
+            </div>
           </div>
         </div>
       </div>
